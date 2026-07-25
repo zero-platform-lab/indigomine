@@ -22,6 +22,14 @@ html[lang=ja] body {
                "BIZ UDPGothic", "Yu Gothic UI", "Yu Gothic",
                "Noto Sans JP", "Meiryo", sans-serif;
   /* サイズは素テーマ既定(13px)のまま。 */
+  /* 地の文は純黒ではなく、ほんのり紫みのある濃色に（インディゴテーマに馴染ませる）。 */
+  color: #342e56;
+}
+/* body 指定だけだとテーマが #content 等に色指定していて効かないので、specificity を上げて確実に当てる。 */
+#content,
+#content p, #content td, #content li, #content dd,
+#content .issue .attribute > .value {
+  color: #342e56;
 }
 
 /* ---- ヘッダグラデの“明るい方”（左上グロー）を控えめに深く ----
@@ -60,32 +68,15 @@ html[lang=ja] body {
 #content table.list tr.tracker-2 td.id > a { background-color: #5257d6; } /* 機能 インディゴ */
 #content table.list tr.tracker-3 td.id > a { background-color: #3a8fcc; } /* サポート 青 */
 
-/* ---- ステータスは色文字（Opale の status 配色に寄せる）---- */
-#content table.list td.status { font-weight: 600; }
-#content table.list tr.status-1 td.status { color: #116699; } /* 新規 */
-#content table.list tr.status-3 td.status { color: #12882e; } /* 解決 */
-#content table.list tr.status-4 td.status { color: #614ba6; } /* フィードバック */
-#content table.list tr.status-5 td.status { color: #8a929c; } /* 終了 */
-#content table.list tr.status-6 td.status { color: #e5123d; } /* 却下 */
 
-/* ---- チケット詳細：ステータス値を色バッジ（ピル）に（Opale 準拠・一覧と同色）----
-   Redmine 6 は <div class="status attribute"><div class="value">…</div></div>、
-   コンテナ側に .issue.status-N。 */
-/* ステータスはバッジ(ピル)にせず色文字（一覧と同じ）。 */
-#content .issue .status.attribute .value { font-weight: 600; }
-#content .issue.status-1 .status.attribute .value { color: #116699; } /* 新規 */
-#content .issue.status-3 .status.attribute .value { color: #12882e; } /* 解決 */
-#content .issue.status-4 .status.attribute .value { color: #614ba6; } /* フィードバック */
-#content .issue.status-5 .status.attribute .value { color: #8a929c; } /* 終了 */
-#content .issue.status-6 .status.attribute .value { color: #e5123d; } /* 却下 */
 
 /* ---- 詳細ページ上部を締める（寂しさ解消）----
    件名を大きく、トラッカー+番号(#機能 #28)をインディゴ太字、標準の未完了/完了バッジを色ピルに。 */
 #content .issue.details .subject h3 { font-size: 1.2em; line-height: 1.3; font-weight: 600; color: #2b2b3a; }
 #content h2.inline-block { color: #574aa8; font-weight: 600; }
-/* 詳細の属性ラベル/値の黒太字を軽く（ヤボさ回避。ステータスはバッジで別途着色）。 */
-#content .issue .attribute > .label { font-weight: 500; }
-#content .issue .attribute > .value { color: #2a2547; font-weight: 600; }
+/* 詳細の属性：項目名（ラベル）は太字で目立たせ、中身（値）は普通の文字に。 */
+#content .issue .attribute > .label { font-weight: 600; color: #453a80; }
+#content .issue .attribute > .value { font-weight: normal; }
 #content .badge.badge-status-open {
   background: #eaf1fd; color: #116699; border: 1px solid #bcd6ec;
   padding: 2px 12px; border-radius: 999px; font-weight: 600;
