@@ -3,6 +3,8 @@
 An indigo (blue-violet) theme for **Redmine 6.x** — a modernized, recolored fork of
 [Bleuclair](https://github.com/farend/redmine_theme_farend_bleuclair) (GPLv2).
 
+*日本語の説明は [README.ja.md](README.ja.md) を参照してください。*
+
 No build step required: compiled CSS/JS are included. Just drop it into `themes/`.
 
 ## What's different from Bleuclair
