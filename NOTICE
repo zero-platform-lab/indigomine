@@ -1,0 +1,19 @@
+Indigomine
+==========
+This theme is a modified version of "Bleuclair" (farend / redmine_theme_farend_bleuclair),
+licensed under the GNU General Public License v2.0 (GPLv2).
+
+Original: https://github.com/farend/redmine_theme_farend_bleuclair (tag 0.4.4)
+  — the upstream repository includes the SCSS source. Indigomine modifies the
+    compiled CSS/JS distributed here.
+
+Modifications by zero-platform-lab (2026):
+  - Indigo (blue-violet) recolor of header gradient, links and accents.
+  - Light-yellow highlights (hover / issue box / cards / TOC) changed to lavender.
+  - Tracker-colored issue ID tags in lists (indigo family per tracker); colored status text.
+  - Two-part "picker" chip for the issue detail title (tracker + number) via theme.js.
+  - Modern font stack (BIZ UDPGothic / system-ui), rounded cards, lighter borders, row hover.
+  - Simple Gantt plugin colors follow the theme through CSS variables.
+
+As a derivative work, Indigomine is also distributed under GPLv2. The upstream
+LICENSE (GPLv2) is retained in this directory.

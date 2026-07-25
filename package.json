@@ -1,0 +1,12 @@
+{
+  "name": "indigomine",
+  "version": "1.0.0",
+  "description": "Indigo (blue-violet) Redmine 6.x theme — a modernized GPLv2 fork of Bleuclair.",
+  "license": "GPL-2.0",
+  "author": "zero-platform-lab",
+  "homepage": "https://github.com/zero-platform-lab/indigomine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero-platform-lab/indigomine.git"
+  }
+}
