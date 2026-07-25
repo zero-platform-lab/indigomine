@@ -1,40 +1,39 @@
 # Indigomine
 
-An indigo (blue-violet) theme for **Redmine 6.x** — a modernized, recolored fork of
-[Bleuclair](https://github.com/farend/redmine_theme_farend_bleuclair) (GPLv2).
+**Redmine 6.x** 向けのインディゴ（青紫）テーマ。[Bleuclair](https://github.com/farend/redmine_theme_farend_bleuclair)（GPLv2）をベースに、配色をインディゴ化しモダンに調整した派生テーマです。
 
-*日本語の説明は [README.ja.md](README.ja.md) を参照してください。*
+*Read this in [English](README.en.md).*
 
-No build step required: compiled CSS/JS are included. Just drop it into `themes/`.
+ビルド不要。コンパイル済みの CSS/JS を同梱しているので、`themes/` に置くだけで使えます。
 
-## What's different from Bleuclair
+## Bleuclair からの変更点
 
-- **Indigo / blue-violet recolor** — header gradient, links and accents.
-- **Lavender highlights** — replaces the light‑yellow hover/box/card backgrounds.
-- **Tracker‑colored issue ID tags** in issue lists (indigo‑family per tracker) and
-  **colored status text**.
-- **Two‑part "picker" chip** for the issue detail title (tracker + number, right‑pointed
-  ribbon) — powered by the bundled `javascripts/theme.js`.
-- **Modern font stack** (BIZ UDPGothic / system‑ui), rounded cards, lighter borders, row hover.
-- The **Simple Gantt** plugin picks up the theme colors via CSS variables (`--sg-*`).
+- **インディゴ／青紫の配色** — ヘッダのグラデーション、リンク、アクセントカラー。
+- **ラベンダーのハイライト** — 薄黄色だったホバー／ボックス／カード背景を置き換え。
+- **本文の色みを調整** — 純黒ではなく、ほんのり紫みのある濃色（`#342e56`）。
+- **項目名（ラベル）を強調** — チケット詳細の項目名を太字＋インディゴ（`#453a80`）、値は普通の文字。
+- **トラッカー色のチケット ID タグ** — 一覧のチケット ID をトラッカーごとにインディゴ系で色分け。
+- **2 段の「ピッカー」チップ** — チケット詳細タイトル（トラッカー＋番号）を右尖りのリボン形に（同梱の `javascripts/theme.js` で処理）。
+- **モダンなフォントスタック**（BIZ UDPGothic / system-ui）、角丸カード、淡い罫線、行ホバー。
+- **Simple Gantt** プラグインが CSS 変数（`--sg-*`）経由でテーマ配色に追従。
 
-## Install (Redmine 6.x)
+## インストール（Redmine 6.x）
 
-1. Clone into your Redmine `themes/` directory:
+1. Redmine の `themes/` ディレクトリにクローン：
 
    ```bash
    cd /path/to/redmine/themes
    git clone https://github.com/zero-platform-lab/indigomine.git
    ```
 
-2. Restart Redmine (Propshaft regenerates the theme assets on boot).
-3. **Administration → Settings → Display → Theme → Indigomine → Save**.
+2. Redmine を再起動（Propshaft が起動時にテーマアセットを再生成します）。
+3. **管理 → 設定 → 表示 → テーマ → Indigomine → 保存**。
 
-## License & credits
+## ライセンスとクレジット
 
-Distributed under the **GNU General Public License v2.0 (GPLv2)**, inherited from Bleuclair.
-See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+Bleuclair から継承した **GNU General Public License v2.0（GPLv2）** で配布します。
+[`LICENSE`](LICENSE) と [`NOTICE`](NOTICE) を参照してください。
 
-- Original theme: **Bleuclair** by Far End Technologies (farend).
-- Recolor and layout modifications: zero-platform-lab.
-- Upstream (includes the SCSS source): <https://github.com/farend/redmine_theme_farend_bleuclair>
+- オリジナルテーマ：**Bleuclair**（Far End Technologies / farend）
+- 配色・レイアウトの改変：zero-platform-lab
+- アップストリーム（SCSS ソースを含む）：<https://github.com/farend/redmine_theme_farend_bleuclair>
