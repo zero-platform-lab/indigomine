@@ -16,7 +16,7 @@ No build step required: compiled CSS/JS are included. Just drop it into `themes/
 - **Two‑part "picker" chip** for the issue detail title (tracker + number, right‑pointed
   ribbon) — powered by the bundled `javascripts/theme.js`.
 - **Modern font stack** (BIZ UDPGothic / system‑ui), rounded cards, lighter borders, row hover.
-- The **Simple Gantt** plugin picks up the theme colors via CSS variables (`--sg-*`).
+- The [**Simple Gantt**](https://github.com/zero-platform-lab/redmine_simple_gantt) plugin picks up the theme colors via CSS variables (`--sg-*`).
 
 ## Install (Redmine 6.x)
 

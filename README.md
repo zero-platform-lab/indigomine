@@ -15,7 +15,7 @@
 - **トラッカー色のチケット ID タグ** — 一覧のチケット ID をトラッカーごとにインディゴ系で色分け。
 - **2 段の「ピッカー」チップ** — チケット詳細タイトル（トラッカー＋番号）を右尖りのリボン形に（同梱の `javascripts/theme.js` で処理）。
 - **モダンなフォントスタック**（BIZ UDPGothic / system-ui）、角丸カード、淡い罫線、行ホバー。
-- **Simple Gantt** プラグインが CSS 変数（`--sg-*`）経由でテーマ配色に追従。
+- [**Simple Gantt**](https://github.com/zero-platform-lab/redmine_simple_gantt) プラグインが CSS 変数（`--sg-*`）経由でテーマ配色に追従。
 
 ## インストール（Redmine 6.x）
 
